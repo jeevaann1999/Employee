@@ -2,9 +2,20 @@ import java.util.Scanner;
 
 public class Main
 {
+    public static Main[] EmployeeArray=new Main[5];
+
+    public String Empname;
+    public String Designation;
+    public int Salary;
+    public int Empcode;
+    public String PhoneNumb;
+    public String Email;
+
+
     public Main()
     {
         Scanner n = new Scanner(System.in);
+
         System.out.println("Employee code: ");
         int Empcode=n.nextInt();
         System.out.println("Employee Name: ");
