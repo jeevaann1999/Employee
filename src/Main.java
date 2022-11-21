@@ -2,6 +2,32 @@ import java.util.Scanner;
 
 public class Main
 {
+    public Main()
+    {
+        Scanner n = new Scanner(System.in);
+        System.out.println("Employee code: ");
+        int Empcode=n.nextInt();
+        System.out.println("Employee Name: ");
+        String Empname=n.next();
+        System.out.println("Designation: ");
+        String Designation=n.next();
+        System.out.println("Salary ");
+        int Salary=n.nextInt();
+        System.out.println("Phone number: ");
+        String PhoneNumb=n.next();
+        System.out.println("Email: ");
+        String Email=n.next();
+    }
+
+    public static void AddEmp()
+    {
+        Main[] EmployeeArray= new Main[5];
+        for(int i=0;1<5;i++)
+        {
+            Main e= new Main();
+            EmployeeArray[i]=e;
+        }
+    }
     public static void main(String[] args)
     {
         System.out.println("Choose an option");
